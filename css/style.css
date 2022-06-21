@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to left, #24516e 50%, #365f7b);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 350px;
+}
+.manitor {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(90deg, rgba(79, 82, 83, 1), rgba(33, 33, 36, 1));
+  color: #fff;
+  padding: 30px 10px;
+  font-size: 4.5rem;
+  user-select: none;
+}
+.key-border {
+  width: 100%;
+  border: 13px solid #34abe7;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.row {
+  width: 100%;
+  display: flex;
+}
+.key {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.key-ac {
+  flex-grow: 2;
+  width: 167px;
+}
+.key-ac .box {
+  width: 154px;
+}
+.box {
+  display: flex;
+  width: 67px;
+  height: 67px;
+  border-radius: 3.5px;
+  position: relative;
+}
+.angle-left {
+  border-bottom: 67px solid #032c43;
+  border-left: 67px solid transparent;
+  border-right: 0px solid transparent;
+  position: absolute;
+  top: 0;
+}
+.rotate {
+  transform: rotate(180deg);
+  border-bottom: 67px solid #135c87;
+  border-left: 67px solid transparent;
+  border-right: 0px solid transparent;
+  position: absolute;
+  left: 0;
+}
+.blur {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+.box span:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #2b7db7, #3a9fdd);
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 3.5px;
+  border-left: 1.5px solid #34abe7;
+  z-index: 4;
+  position: absolute;
+  top: 7.5px;
+  left: 8px;
+}
+.ac {
+  border-left-width: 154px;
+}
+.ac-key {
+  width: 137px !important;
+  left: 8px !important;
+}
